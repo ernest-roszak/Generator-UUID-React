@@ -1,22 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { v4 as uuidv4 } from "uuid";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Generator UUID 4</h1>
+        <p>Generate Your Universally Unique Identifier Number</p>
+        {/* <button onClick={uuidv4}>GENERATE</button> */}
+        <p>{uuidv4()}</p>
       </header>
     </div>
   );
